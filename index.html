@@ -13,6 +13,7 @@
 <style>
    body,
    html {
+      cursor: default;
       height: 100%;
       margin: 0;
       overflow-x: hidden;
@@ -31,7 +32,7 @@
    a:visited {
       color: #68B0AB;
       text-decoration: none;
-      cursor: auto;
+      cursor: pointer;
    }
 
    .img-hor {
@@ -74,8 +75,8 @@
    .headingimg {
       padding-left: 45%;
       padding-top: 10%;
-       width: 50%;
-       height: 55%;
+      width: 50%;
+      height: 55%;
    }
 
    .sectionheading {
@@ -103,16 +104,40 @@
       font-weight: 100;
    }
 
-   .btn {
-    background: #ECF4F3;
-    -webkit-border-radius: 18;
-    -moz-border-radius: 18;
-    border-radius: 18px;
-    font-family: Arial;
-    color: #ffffff;
-    font-size: 20px;
-    padding: 10px 20px 10px 20px;
-    text-decoration: none;
+   .btn-hover {
+      width: 200px;
+      font-size: 16px;
+      font-weight: 600;
+      color: #fff;
+      cursor: pointer;
+      margin: 20px;
+      height: 55px;
+      text-align: center;
+      border: none;
+      background-size: 300% 100%;
+
+      border-radius: 50px;
+      transition: all .4s ease-in-out;
+      -o-transition: all .4s ease-in-out;
+      -webkit-transition: all .4s ease-in-out;
+      transition: all .4s ease-in-out;
+   }
+
+   .btn-hover:hover {
+      background-position: 100% 0;
+      transition: all .4s ease-in-out;
+      -o-transition: all .4s ease-in-out;
+      -webkit-transition: all .4s ease-in-out;
+      transition: all .4s ease-in-out;
+   }
+
+   .btn-hover:focus {
+      outline: none;
+   }
+
+   .btn-hover.color-10 {
+      background-image: linear-gradient(to right, #ed6ea0, #ec8c69, #f7186a, #FBB03B);
+      box-shadow: 0 4px 15px 0 rgba(236, 116, 149, 0.75);
    }
 
    .container {
@@ -141,6 +166,7 @@
    .abilitiesbg {
       padding-bottom: 5%;
    }
+
    .getintouch {
       padding-bottom: 3%;
    }
@@ -163,7 +189,7 @@
          <tr align=center>
             <td align=left style="padding-left: 20%" width=41%>
                <big style="font-size: 25px; color: #68B0AB">About me</big><br>
-               <p style="line-height: 23px">I am currently working at Ingram Micro SSC PVT LTD, Mumbai, as an Application Developer, Software Engineer. I Joined Ingram
+               <p style="line-height: 23px; text-align: justify; text-justify: inter-word;">I am currently working at Ingram Micro SSC PVT LTD, Mumbai, as an Application Developer, Software Engineer. I Joined Ingram
                   Micro on July 19, 2021. I am a part of SI middleware team which is responsible for backend support of all the logistics taking
                   place in the Europe region.</p>
             </td>
@@ -196,10 +222,12 @@
    <div class="workbg" style="height: auto">
       <table style="padding-bottom:5%">
          <tr>
-            <td><img class="headingimg" src="Images/career1.png"/></td>
+            <td><img class="headingimg" src="Images/career1.png" /></td>
             <td width=50%>
-               <div class="sectionheading">Career</div><br/>
-               <div class="sectionpara"><p><strong>The best way to predict the future is to create it.</strong></p></div>
+               <div class="sectionheading">Career</div><br />
+               <div class="sectionpara">
+                  <p><strong>The best way to predict the future is to create it.</strong></p>
+               </div>
             </td>
          </tr>
       </table>
@@ -214,7 +242,7 @@
             <tr>
                <td width=300 style="vertical-align:top; padding-top:18px; font-size:80%">July 2021 - Current</td>
                <td width=600>
-                  <p style="line-height: 23px; font-size:80%">
+                  <p style="line-height: 23px; font-size:80%; text-align: justify; text-justify: inter-word;">
                      Working with the SI team and XPP middleware teams. Using Sterling B2B Integrator Map Editor for creating data maps between
                      customer order data format and our order data format. Providing backend support to the logistics in the Europe region
                      using software like PuTTy, Oracle SQL Developer with the help of Linux servers.
@@ -247,7 +275,7 @@
             <tr>
                <td style="vertical-align:top; padding-top:18px; font-size:80%">June 2021 - July 2021</td>
                <td>
-                  <p style="line-height:23px; font-size:80%">
+                  <p style="line-height:23px; font-size:80%; text-align: justify; text-justify: inter-word;">
                      Performed identification of IoT components. Conducted market study of Components. Identification of vendors of these components.
                      Introduced the components of the target audience. Managed all the data of all the information of different components.
                   </p>
@@ -279,7 +307,7 @@
             <tr>
                <td style="vertical-align:top; padding-top:18px; font-size:80%">May 2021 - June 2021</td>
                <td>
-                  <p style="line-height:23px; font-size:80%">
+                  <p style="line-height:23px; font-size:80%; text-align: justify; text-justify: inter-word;">
                      Composed fundraising newsletters to raise capital. Assisted with event coordination. Promoted products of small scale business
                      Planned events to collect more funds. Implemented marketing campaigns targeting donors
                   </p>
@@ -307,72 +335,74 @@
    <div class="educationbg" style="height: auto">
       <table>
          <tr>
-            <td><img class="headingimg" src="Images/education.jpg"/></td>
+            <td><img class="headingimg" src="Images/education.jpg" /></td>
             <td width=50%>
-               <div class="sectionheading">Education</div><br/>
-               <div class="sectionpara"><p><strong>The great aim of education is not knowledge but action</strong></p></div>
+               <div class="sectionheading">Education</div><br />
+               <div class="sectionpara">
+                  <p><strong>The great aim of education is not knowledge but action</strong></p>
+               </div>
             </td>
          </tr>
       </table>
    </div>
-      <table style="padding-left: 20%; padding-bottom:5%">
-         <tr>
-            <td width=300><b>Pillai College of Engineering</b></td>
-            <td width=600><b>Bachelor's in Information Technology</b></td>
-         </tr>
+   <table style="padding-left: 20%; padding-bottom:5%">
+      <tr>
+         <td width=300><b>Pillai College of Engineering</b></td>
+         <td width=600><b>Bachelor's in Information Technology</b></td>
+      </tr>
 
-         <tr>
-            <td style="vertical-align:top; padding-top:18px; font-size:80%">Aug 2018 - Jun 2021</td>
-            <td>
-               <p style="line-height:23px; font-size:80%">
-                  I completed my Bachelor's of Engineering (BE) in Information technology from Pillai College of Engineering which is affiliated
-                  to University of Mumbai. As I did Diploma after my 10th grade, I got direct second year admission in the Bachelor's of
-                  Engineering (BE).
-               </p>
-            </td>
-         </tr>
+      <tr>
+         <td style="vertical-align:top; padding-top:18px; font-size:80%">Aug 2018 - Jun 2021</td>
+         <td>
+            <p style="line-height:23px; font-size:80%; text-align: justify; text-justify: inter-word;">
+               I completed my Bachelor's of Engineering (BE) in Information technology from Pillai College of Engineering which is affiliated
+               to University of Mumbai. As I did Diploma after my 10th grade, I got direct second year admission in the Bachelor's of
+               Engineering (BE).
+            </p>
+         </td>
+      </tr>
 
-         <tr>
-            <td height=20> </td>
-            <td>
-               <p style="font-size:80%">
-                  <ion-icon name="location-outline"></ion-icon> Navi Mumbai | <a target="_blank" href="https://www.pce.ac.in/">https://pce.ac.in</a></li>
-               </p>
-            </td>
-         </tr>
+      <tr>
+         <td height=20> </td>
+         <td>
+            <p style="font-size:80%">
+               <ion-icon name="location-outline"></ion-icon> Navi Mumbai | <a target="_blank" href="https://www.pce.ac.in/">https://pce.ac.in</a></li>
+            </p>
+         </td>
+      </tr>
 
-         <tr>
-            <td height=20> </td>
-         </tr>
+      <tr>
+         <td height=20> </td>
+      </tr>
 
-         <tr>
-            <td height=20> </td>
-         </tr>
+      <tr>
+         <td height=20> </td>
+      </tr>
 
-         <tr>
-            <td><b>Dr Dy Patil Polytechnic</b></td>
-            <td><b>Diploma in Computer Engineering</b></td>
-         </tr>
+      <tr>
+         <td><b>Dr Dy Patil Polytechnic</b></td>
+         <td><b>Diploma in Computer Engineering</b></td>
+      </tr>
 
-         <tr>
-            <td style="vertical-align:top; padding-top:18px; font-size:80%">Jul 2015 - May 2018</td>
-            <td>
-               <p style="line-height:23px; font-size:80%">
-                  I studied Diploma in Computer Science from Dr Dy Patil Polytechnic which is affiliated to Maharashtra state board of
-                  Technical Education. It is a three year program.
-               </p>
-            </td>
-         </tr>
+      <tr>
+         <td style="vertical-align:top; padding-top:18px; font-size:80%">Jul 2015 - May 2018</td>
+         <td>
+            <p style="line-height:23px; font-size:80%; text-align: justify; text-justify: inter-word;">
+               I studied Diploma in Computer Science from Dr Dy Patil Polytechnic which is affiliated to Maharashtra state board of
+               Technical Education. It is a three year program.
+            </p>
+         </td>
+      </tr>
 
-         <tr>
-            <td> </td>
-            <td>
-               <p style="font-size:80%">
-                  <ion-icon name="location-outline"></ion-icon> Navi Mumbai | <a target="_blank" href="http://www.dypatil.edu/mumbai/polytechnic/">http://dypatil.edu</a>
-               </p>
-            </td>
-         </tr>
-      </table>
+      <tr>
+         <td> </td>
+         <td>
+            <p style="font-size:80%">
+               <ion-icon name="location-outline"></ion-icon> Navi Mumbai | <a target="_blank" href="http://www.dypatil.edu/mumbai/polytechnic/">http://dypatil.edu</a>
+            </p>
+         </td>
+      </tr>
+   </table>
    </div>
    <br>
 
@@ -384,10 +414,12 @@
    <div class="projectsbg" style="height: auto">
       <table style="padding-bottom:5%">
          <tr>
-            <td><img class="headingimg" src="Images/projects.png"/></td>
+            <td><img class="headingimg" src="Images/projects.png" /></td>
             <td width=50%>
-               <div class="sectionheading">Projects</div><br/>
-               <div class="sectionpara"><p><strong>I have no special talent. I am only passionately curious.</strong></div>
+               <div class="sectionheading">Projects</div><br />
+               <div class="sectionpara">
+                  <p><strong>I have no special talent. I am only passionately curious.</strong>
+               </div>
             </td>
          </tr>
       </table>
@@ -402,7 +434,7 @@
          <tr>
             <td height=20> </td>
             <td>
-               <p style="line-height:23px; font-size:80%">
+               <p style="line-height:23px; font-size:80%; text-align: justify; text-justify: inter-word;">
                   The smart alarm clock is an IoT-based project that helps the user to wake up according to the road traffic
                   or train schedules depending on the mode of transport used by the user to reach a destination. It also
                   has some features of home automation. This system will help people to be more punctual.
@@ -422,7 +454,7 @@
          <tr>
             <td height=20> </td>
             <td>
-               <p style="line-height:23px; font-size:80%">
+               <p style="line-height:23px; font-size:80%; text-align: justify; text-justify: inter-word;">
                   Attrition is basically the turnover rate of employees inside an organization. This can happen due to many
                   reasons such as employees looking for better opportunities, a negative working environment, Bad
                   Management, sickness of an employee, excessive working hours, We will be developing a model that
@@ -443,7 +475,7 @@
          <tr>
             <td height=20> </td>
             <td>
-               <p style="line-height:23px; font-size:80%">
+               <p style="line-height:23px; font-size:80%; text-align: justify; text-justify: inter-word;">
                   The project aims to deliver an application that will be available on android mobile devices. There are
                   some kindergarten-level lessons in this application. This can be an initial step-parent can take to teach
                   their kids before they go to school. Children can easily learn basic things while having fun, such as
@@ -464,7 +496,7 @@
          <tr>
             <td height=20> </td>
             <td>
-               <p style="line-height:23px; font-size:80%">
+               <p style="line-height:23px; font-size:80%; text-align: justify; text-justify: inter-word;">
                   A system that consists of an Arduino Uno, gsm module, mq5 sensor and LCD module. Mq5 Sensor and
                   Arduino detect the LPG gas and the gsm module sends the SMS to specified Mobile as well as blink the
                   red LCD while gas is detected. Gas leakage is a Major Problem in industries, residential and gas-powered
@@ -486,7 +518,7 @@
          <tr>
             <td height=20> </td>
             <td>
-               <p style="line-height:23px; font-size:80%">
+               <p style="line-height:23px; font-size:80%; text-align: justify; text-justify: inter-word;">
                   I led a team of three in developing the project Smart car parking system. The smart car parking system is
                   an IoT-based project that helps the car owner to find a parking space in a huge parking lot such as mall
                   parking or movie theatre parking. The different Components used are an Infrared sensor, Ultrasonic
@@ -508,7 +540,7 @@
          <tr>
             <td height=20> </td>
             <td>
-               <p style="line-height:23px; font-size:80%">
+               <p style="line-height:23px; font-size:80%; text-align: justify; text-justify: inter-word;">
                   The mood-based movie suggestion is a python based project which suggests movies to the user
                   according to the mood. It has a huge database that consists of movies of different languages and genres.
                </p>
@@ -527,7 +559,7 @@
          <tr>
             <td height=20> </td>
             <td>
-               <p style="line-height:23px; font-size:80%">
+               <p style="line-height:23px; font-size:80%; text-align: justify; text-justify: inter-word;">
                   This is an e-commerce website like any other website. But the main feature is that this application will
                   allow the users to compare 4 products of a category. The comparison feature is now known to all of us,
                   but back then, this feature was not implemented in any of the e-commerce websites.
@@ -545,7 +577,9 @@
 
    <div class="abilitiesbg" style="height: 70%">
       <center>
-         <div class="centerheading"><p style="margin-bottom: 15px; padding-top:30px">Abilities</p></div>
+         <div class="centerheading">
+            <p style="margin-bottom: 15px; padding-top:30px">Abilities</p>
+         </div>
       </center>
       <hr width=50%>
 
@@ -722,14 +756,17 @@
       <br><br>
    </center>
 
-   <div class="getintouch" style="height: 55%">
+   <div class="getintouch" style="height: 60%">
       <center>
-         <div class="centerheading"><p style="margin-bottom: 15px; padding-top:30px; margin-bottom:0">Get in touch</p><p style="font-size: 50%; margin-bottom:0;color:#00ADB5"><strong>I’m currently available for freelance work.</strong></p></div>
+         <div class="centerheading">
+            <p style="margin-bottom: 15px; padding-top:30px; margin-bottom:0">Get in touch</p>
+            <p style="font-size: 50%; margin-bottom:0;color:#00ADB5"><strong>I’m currently available for freelance work.</strong></p>
+         </div>
       </center>
       <center>
          <h3 style="font-size:80%">Have an exciting idea where you want me to work with you?<br>Hit me up.</h3>
          <br><br>
-         <a target="_blank" class="btn" href=" https://wa.me/+917021893980">CONTACT ME</a>
+         <button class="btn-hover color-10"><a target="_blank" class="btn" href=" https://wa.me/+917021893980" style="color:#FFF">CONTACT ME</a></button>
       </center>
    </div>
 
