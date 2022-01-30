@@ -3,6 +3,7 @@
 
 <head>
    <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
    <center>
       <title>Virag Savaliya</title>
@@ -16,8 +17,6 @@
       margin: 0;
       overflow-x: hidden;
       font-family: 'Open Sans', sans-serif;
-      background-color: #*f2f3f4;
-      /*f2f3f4*/
    }
 
    h2 {
@@ -48,16 +47,15 @@
       border-color: grey;
       border-style: none;
       border-top-style: dotted;
-      border-width: 10px;
-      width: 5%;
+      border-width: 7px;
+      height: 1%;
       opacity: 0.2;
+      width: 5%;
    }
 
    .bg {
       background-image: url("Images/webbgoverlay.jpg");
-
       height: 100%;
-
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
@@ -80,35 +78,41 @@
        height: 55%;
    }
 
-   /*.sectionheading {
-      color: #68B0AB;
-      display: flex;
-      font-size: 200%;
-      padding-left: 20%;
-      justify-content: center;
-      flex-direction: column;
-      font-weight: 100;
-   }*/
-
    .sectionheading {
       color: #68B0AB;
-      padding-left: 3.5%;
       font-size: 220%;
       font-weight: 100;
+      padding-left: 3.5%;
+      padding-top: 7%;
    }
 
    .sectionpara {
+      font-size: 80%;
+      line-height: 23px;
       padding-left: 4%;
-      line-height: 2px;
+      text-align: justify;
+      text-justify: inter-word;
    }
 
-   .abilitiesheading {
+   .centerheading {
       color: #68B0AB;
       display: flex;
-      font-size: 30px;
+      font-size: 220%;
       justify-content: center;
       flex-direction: column;
       font-weight: 100;
+   }
+
+   .btn {
+    background: #ECF4F3;
+    -webkit-border-radius: 18;
+    -moz-border-radius: 18;
+    border-radius: 18px;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
    }
 
    .container {
@@ -123,27 +127,22 @@
    }
 
    .workbg {
-      /*background-color: #EBF3F3;
-      #EBF3F3*/
       padding-bottom: 5%;
    }
 
    .educationbg {
-      /*background-color: #F3EBF2;
-      #EAEAE7*/
       padding-bottom: 5%;
    }
 
    .projectsbg {
-      /*background-color: #FEF9F9;
-      #F3EBF2*/
       padding-bottom: 5%;
    }
 
    .abilitiesbg {
-      /*background-color: #F2EBE5;
-      #e5ffff*/
-      E2E2E2*/ padding-bottom: 5%;
+      padding-bottom: 5%;
+   }
+   .getintouch {
+      padding-bottom: 3%;
    }
 </style>
 
@@ -191,19 +190,20 @@
 
    <center>
       <hr class="hrdot">
-      <br><br><br>
+      <br>
    </center>
 
-   <div class="workbg">
-      <table style="padding-bottom:7%">
+   <div class="workbg" style="height: auto">
+      <table style="padding-bottom:5%">
          <tr>
             <td><img class="headingimg" src="Images/career1.png"/></td>
             <td width=50%>
                <div class="sectionheading">Career</div><br/>
-               <div class="sectionpara"><p>Add text here</p></div>
+               <div class="sectionpara"><p><strong>The best way to predict the future is to create it.</strong></p></div>
             </td>
          </tr>
       </table>
+
       <center>
          <table>
             <tr>
@@ -297,25 +297,25 @@
          </table>
    </div>
    </center>
-   <br><br>
+   <br>
 
    <center>
       <hr class="hrdot">
-      <br><br><br>
+      <br>
    </center>
 
-   <div class="educationbg">
-      <table style="padding-bottom:2%">
+   <div class="educationbg" style="height: auto">
+      <table>
          <tr>
             <td><img class="headingimg" src="Images/education.jpg"/></td>
             <td width=50%>
                <div class="sectionheading">Education</div><br/>
-               <div class="sectionpara"><p>Add text here</p></div>
+               <div class="sectionpara"><p><strong>The great aim of education is not knowledge but action</strong></p></div>
             </td>
          </tr>
       </table>
    </div>
-      <table style="padding-left: 20%">
+      <table style="padding-left: 20%; padding-bottom:5%">
          <tr>
             <td width=300><b>Pillai College of Engineering</b></td>
             <td width=600><b>Bachelor's in Information Technology</b></td>
@@ -374,20 +374,20 @@
          </tr>
       </table>
    </div>
-   <br><br><br><br><br><br>
+   <br>
 
    <center>
       <hr class="hrdot">
-      <br><br><br>
+      <br>
    </center>
 
-   <div class="projectsbg" style="height: 230%">
-      <table style="padding-bottom:7%">
+   <div class="projectsbg" style="height: auto">
+      <table style="padding-bottom:5%">
          <tr>
             <td><img class="headingimg" src="Images/projects.png"/></td>
             <td width=50%>
                <div class="sectionheading">Projects</div><br/>
-               <div class="sectionpara"><p>Add text here</p></div>
+               <div class="sectionpara"><p><strong>I have no special talent. I am only passionately curious.</strong></div>
             </td>
          </tr>
       </table>
@@ -536,18 +536,16 @@
          </tr>
       </table>
    </div>
-   <br><br>
+   <br>
 
    <center>
       <hr class="hrdot">
-      <br><br><br>
+      <br><br>
    </center>
 
-   <div class="abilitiesbg" style="height: 95%">
+   <div class="abilitiesbg" style="height: 70%">
       <center>
-         <div class="abilitiesheading">
-            <p style="margin-bottom: 15px; padding-top:30px">Abilities</p>
-         </div>
+         <div class="centerheading"><p style="margin-bottom: 15px; padding-top:30px">Abilities</p></div>
       </center>
       <hr width=50%>
 
@@ -718,6 +716,22 @@
    </div>
    </div>
    <br><br>
+
+   <center>
+      <hr class="hrdot">
+      <br><br>
+   </center>
+
+   <div class="getintouch" style="height: 55%">
+      <center>
+         <div class="centerheading"><p style="margin-bottom: 15px; padding-top:30px; margin-bottom:0">Get in touch</p><p style="font-size: 50%; margin-bottom:0;color:#00ADB5"><strong>I’m currently available for freelance work.</strong></p></div>
+      </center>
+      <center>
+         <h3 style="font-size:80%">Have an exciting idea where you want me to work with you?<br>Hit me up.</h3>
+         <br><br>
+         <a target="_blank" class="btn" href=" https://wa.me/+917021893980">CONTACT ME</a>
+      </center>
+   </div>
 
    <div class="footer" style="height: 17%">
       <footer>
